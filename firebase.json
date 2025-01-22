@@ -1,0 +1,34 @@
+{
+  "hosting": {
+    "site": "webs-09-aids",
+    "public": "build/web",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "aids-feedback-app",
+          "appId": "1:338772583049:android:3cbde9210d886c507a1c58",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "aids-feedback-app",
+          "configurations": {
+            "android": "1:338772583049:android:3cbde9210d886c507a1c58",
+            "ios": "1:338772583049:ios:9ce173dbd21303657a1c58",
+            "web": "1:338772583049:web:55030d796e85c8587a1c58"
+          }
+        }
+      }
+    }
+  }
+}
